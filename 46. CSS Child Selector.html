@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: blue;
+        }
+        /*Ini penggunaan descendant selector. Tapi bila instruksi
+        style ini lebih dulu, maka semua instruksinya akan diganti
+        dengan instruksi yang selanjutnya*/
+        div > p{
+            color: hotpink;
+        }
+        p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Kombinasi child selector membuat sebuah teknik yang 
+        digunakan sebagai efisiensi sintak css untuk keperluan style
+        HTML. Yang digunakan hanya untuk nested langsung dari
+        sebuah element.
+    </p>
+    
+    <div>
+        <p>Ini adalah child selector</p>
+        <section>
+            <p>Ini adalah bukan child tetapi descendant selector</p>
+        </section>
+        <p>Ini adalah child selector</p>
+        <p>Ini adalah child selector</p>
+    </div>
+
+    <p>Ini bukan kombinasi selector</p>
+</body>
+</html>
